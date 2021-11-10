@@ -1,10 +1,10 @@
-class pasture {
+class pasture (
   
-  $port                 = '80'
-  $default_character    = 'dragon'
-  $default_message      = 'Hellp from variable in init.pp'
-  $pasture_config_file  = '/etc/pasture_config.yaml'
-
+  $port                 = '80',
+  $default_character    = 'dragon',
+  $default_message      = 'Hellp from variable in init.pp',
+  $pasture_config_file  = '/etc/pasture_config.yaml',
+){
   include pasture::base
 
   package {'pasture':
