@@ -1,0 +1,14 @@
+<%- | $port,
+      $default_animal,
+      $default_message,
+|  -%>
+
+
+#this file is managed by puppet
+
+---
+:default_character: <%= $default_animal  %> 
+:default_message: <%= $default_message  %>
+:sinatra_settings:
+  :port: <%= $port %>
+  :server: webrick
