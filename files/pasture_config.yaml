@@ -1,0 +1,6 @@
+---
+:default_character: stegosaurus
+:default_message: Hello Ping
+:sinatra_settings:
+  :port: 80
+  :server: webrick
